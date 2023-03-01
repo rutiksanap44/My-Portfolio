@@ -70,6 +70,7 @@ section .title::after{
     z-index: 999;
     padding: 30px 0;
     font-family: sans-serif;
+    transition: all 0.3s ease;
 }
 
 .navbar .max-width {
@@ -78,14 +79,15 @@ section .title::after{
     justify-content: space-between;
 }
 
-.navbar .menu a {
+.navbar .logo a {
     color: black;
     font-size: 35px;
     font-weight: 550;
+    transition: 0.5s;
 }
 
 .navbar .logo a:hover {
-    color: aqua
+    color: rgb(0, 184, 0)
 }
 
 .navbar .logo a span {
@@ -103,8 +105,12 @@ section .title::after{
     font-size: 18px;
     font-weight: 450;
     margin-left: 25px;
+    transition: 0.8s;
 }
 
+.navbar .menu li a:hover{
+    color:rgb(7, 7, 125);
+}
 .menu-btn {
     color: white;
     font-size: 23px;
