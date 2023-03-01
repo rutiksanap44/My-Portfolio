@@ -47,7 +47,8 @@ section {
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content {
+.skills .skills-content,
+.contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -219,7 +220,9 @@ section .title::after {
 }
 
 .about .about-content .left,
-.skills .skills-content .left {
+.skills .skills-content .left,
+.contact .contact-content .left 
+{
     width: 42%;
 }
 
@@ -231,7 +234,9 @@ section .title::after {
 }
 
 .about .about-content .right,
-.skills .skills-content .right {
+.skills .skills-content .right,
+.contact-content .right
+{
     width: 53%;
 }
 
@@ -314,7 +319,8 @@ section .title::after {
     transform: scale(1.05);
 }
 
-.Services .serv-content .card .box i {
+.Services .serv-content .card .box i
+ {
     font-size: 50px;
     color: rgb(0, 184, 0);
     transition: color 0.3s ease;
@@ -414,4 +420,60 @@ section .title::after {
 }
 .skills .skills-content .right .sql::before{
     width: 85%;
+}
+
+/* My Contact Section */
+.contact .max-width .title::after{
+    content: "get connected";
+}
+.get-in-touch{
+    font-size: 25px;
+}.contact-left{
+    margin: 20px;
+    display: flex;
+}
+.contact-content .left{
+    height: 100%;
+}
+.contact-left i{
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(0, 184, 0);
+}
+.message-me p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.right-text{
+    font-size: 20px;
+}
+.form input{
+    margin-top: 10px;
+}
+.name_email input{
+    height: 50px;
+    width: 250px;
+}
+.message input, .Subject input{
+    height: 50px;
+    width:500px
+}
+.mssg_btn{
+    margin-top: 20px;
+    padding: 8px 12px;
+    background-color: rgb(0, 184, 0);
+    border: 2px solid rgb(0, 184, 0);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.mssg_btn:hover{
+    background: none;
+    color: rgb(0, 184, 0);
+}
+::placeholder{
+    padding: 5px;
+    font-size: 15px;
 }
