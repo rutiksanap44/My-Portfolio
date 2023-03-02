@@ -1,5 +1,5 @@
 // typing animation
-
+console.log('script');
 var types = new Typed('.typing', {
     strings: ["Genius", "Freelancer", " Full Stack Web Developer", "Designer"],
     typeSpeed: 100,
